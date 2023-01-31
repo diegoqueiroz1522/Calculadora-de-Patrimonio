@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Calculadora Juros Compostos</string>
+    <string name="em_rs">em R$</string>
+    <string name="aporte">Aporte:</string>
+    <string name="calculadora_de_juros_compostos">Calculadora de Juros Compostos</string>
+    <string name="inflacao">Inflação:</string>
+    <string name="ao_ano">ao ano.</string>
+    <string name="em_porcentagem">em %</string>
+    <string name="taxa">Taxa:</string>
+    <string name="por_mes">por mês.</string>
+    <string name="tempo">Tempo:</string>
+    <string name="em_meses">em meses</string>
+    <string name="meses">meses.</string>
+    <string name="calcular_patrimonio">Calcular Patrimônio</string>
+    <string name="patrimonio_acumulado">Patrimônio Acumulado</string>
+    <string name="patrimonio">Patrimônio:</string>
+    <string name="poder_de_compra">Poder de Compra:</string>
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#091b23"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calculadora_de_juros_compostos"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/white" />
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="8dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/taxa"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:gravity="left"
+                    android:textColor="#363A43" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etTaxaAoAno"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:hint="@string/em_porcentagem"
+                        android:inputType="numberDecimal"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ao_ano"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#363A43" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inflacao"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:gravity="left"
+                    android:textColor="#363A43" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etInflacaoAoAno"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:hint="@string/em_porcentagem"
+                        android:inputType="numberDecimal"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ao_ano"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#363A43" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aporte"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:gravity="left"
+                    android:textColor="#363A43" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etAportePorMes"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:hint="@string/em_rs"
+                        android:inputType="numberDecimal"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/por_mes"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#363A43" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tempo"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:gravity="left"
+                    android:textColor="#363A43" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etTempoEmMeses"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:hint="@string/em_meses"
+                        android:inputType="number"
+                        android:textColor="#363A43"
+                        android:textColorHint="#7A8089" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/meses"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#363A43" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCalcularPatrimonio"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:gravity="center"
+                android:text="@string/calcular_patrimonio"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
